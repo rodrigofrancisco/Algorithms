@@ -1,0 +1,11 @@
+#+TITLE: Algorithms
+
+#+begin_src shell
+@author: rhodfra@gmail.com
+@date: 2021, October
+@tech: C++
+#+end_src
+
+[[./assets/cover.jpg]]
+
+This repository contains solutions for some algorithms problems.
