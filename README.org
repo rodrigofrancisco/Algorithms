@@ -8,4 +8,131 @@
 
 [[./assets/cover.jpg]]
 
-This repository contains solutions for some algorithms problems.
+Este repositorio contiene algo de teoría de algoritmos y algunos problemas resueltos.
+
+Definición de *algoritmo*
+
+Una serie de asos para resolver un problema
+
+- Se crean en tiempo de _diseño_
+- Conocimiento de tema
+- En cualquier lenguaje
+- No depende del hardware ni software, ni del sistema operativo
+- Análisis
+
+Definición de *programa*
+
+- Se "crean" en tiempo de _implementación_
+- Lenguajes de programación
+- Depende del hardware y software
+- Testing
+
+** Características de un algoritmo
+
+1. Input -> 0 o más
+2. Output -> Por lo menos 1
+3. Definiteness -> Sin ambigüedades
+4. Finiteness -> Terminar en un punto
+5. Effitiveness -> No escribr sentencias inncesarias
+
+** ¿Cómo analizar un algoritmo?
+
+1. Tiempo
+2. Espacio
+3. Consumo de red
+4. Consumo energético
+5. Registros del CPU
+
+Se analizarán por el método de frecuencia de conteo
+
+** Ejemplos iniciales y con la sentencia =for=
+
+#+begin_src c
+algorithm swap(a,b)
+{
+  temp = a;
+  a = b;
+  b = temp;
+}
+#+end_src
+
+#+begin_src c
+Algorithm sum(A,n)
+{
+  s = 0;
+  for(i = 0; i < n; i++) {
+    s = s + A[i];
+  }
+  return s;
+}
+#+end_src
+
+#+begin_src c
+Algorithm add(A,B,n)
+{
+  for(i = 0; i < n; i++) {
+    for(j = 0; j < n; j++) {
+        C[i,j] = A[i,j] + B[i,j];
+  }
+}
+#+end_src
+
+#+begin_src c
+for(i = 0; i < n; i++) {
+  for(j = 0; j < i; j++) {
+    stmt;
+}
+#+end_src
+
+#+begin_src c
+p = 0;
+for(i = 1; p <= n; i++)
+{
+  p = p + i;
+}
+#+end_src
+
+#+begin_src c
+for(i = 1; i <= n; i = i*2)
+{
+  stmt;
+}
+#+end_src
+
+#+begin_src c
+for(i = n; i > n; i = i/2)
+{
+  stmt;
+}
+#+end_src
+
+#+begin_src c
+for(i = 0; i*i < n; i++)
+{
+  stmt;
+}
+#+end_src
+
+#+begin_src c
+p = 0;
+for(i = 1; i < n; i =* 2 )
+{
+  p++;
+}
+
+for(j = 1; j < p; j =* 2 )
+{
+  p++;
+}
+#+end_src
+
+#+begin_src c
+for(i = 0; i < n; i++ )
+{
+  for(j = 1; j < n; j =* 2 )
+  {
+    stmt;
+  }
+}
+#+end_src
+** Análisis =if= y =while=
