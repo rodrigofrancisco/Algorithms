@@ -47,92 +47,113 @@ Se analizarán por el método de frecuencia de conteo
 
 ** Ejemplos iniciales y con la sentencia =for=
 
-#+begin_src c
-algorithm swap(a,b)
-{
-  temp = a;
-  a = b;
-  b = temp;
-}
-#+end_src
+1. Intercambiar números
+   #+begin_src c
+   algorithm swap(a,b)
+   {
+       temp = a;
+       a = b;
+       b = temp;
+   }
+   #+end_src
+   [[./README.assets/01.png]]
 
-#+begin_src c
-Algorithm sum(A,n)
-{
-  s = 0;
-  for(i = 0; i < n; i++) {
-    s = s + A[i];
-  }
-  return s;
-}
-#+end_src
+2. Sumar números en un vector
+   #+begin_src c
+   Algorithm sum(A,n)
+   {
+     s = 0;
+     for(i = 0; i < n; i++) {
+       s = s + A[i];
+     }
+     return s;
+   }
+   #+end_src
+   [[./README.assets/02.png]]
 
-#+begin_src c
-Algorithm add(A,B,n)
-{
-  for(i = 0; i < n; i++) {
-    for(j = 0; j < n; j++) {
-        C[i,j] = A[i,j] + B[i,j];
-  }
-}
-#+end_src
+3. Sumar dos matrices
+   #+begin_src c
+   Algorithm add(A,B,n)
+   {
+     for(i = 0; i < n; i++) {
+       for(j = 0; j < n; j++) {
+           C[i,j] = A[i,j] + B[i,j];
+     }
+   }
+   #+end_src
+   [[./README.assets/03.png]]
 
-#+begin_src c
-for(i = 0; i < n; i++) {
-  for(j = 0; j < i; j++) {
-    stmt;
-}
-#+end_src
+4. For anidado
+   #+begin_src c
+   for(i = 0; i < n; i++) {
+     for(j = 0; j < i; j++) {
+       stmt;
+   }
+   #+end_src
+   [[./README.assets/04.png]]
 
-#+begin_src c
-p = 0;
-for(i = 1; p <= n; i++)
-{
-  p = p + i;
-}
-#+end_src
+5. Condición p
+   #+begin_src c
+   p = 0;
+   for(i = 1; p <= n; i++)
+   {
+     p = p + i;
+   }
+   #+end_src
+   [[./README.assets/05.png]]
 
-#+begin_src c
-for(i = 1; i <= n; i = i*2)
-{
-  stmt;
-}
-#+end_src
+6. for i*2
+   #+begin_src c
+   for(i = 1; i <= n; i = i*2)
+   {
+     stmt;
+   }
+   #+end_src
+   [[./README.assets/06.png]]
 
-#+begin_src c
-for(i = n; i > n; i = i/2)
-{
-  stmt;
-}
-#+end_src
+7. for i/2
+   #+begin_src c
+   for(i = n; i > n; i = i/2)
+   {
+     stmt;
+   }
+   #+end_src
+   [[./README.assets/07.png]]
 
-#+begin_src c
-for(i = 0; i*i < n; i++)
-{
-  stmt;
-}
-#+end_src
+8. for i*i
+   #+begin_src c
+   for(i = 0; i*i < n; i++)
+   {
+     stmt;
+   }
+   #+end_src
+   [[./README.assets/08.png]]
 
-#+begin_src c
-p = 0;
-for(i = 1; i < n; i =* 2 )
-{
-  p++;
-}
+9. for i=*2, condición p, j=*2
+   #+begin_src c
+   p = 0;
+   for(i = 1; i < n; i =* 2 )
+   {
+     p++;
+   }
 
-for(j = 1; j < p; j =* 2 )
-{
-  p++;
-}
-#+end_src
+   for(j = 1; j < p; j =* 2 )
+   {
+     p++;
+   }
+   #+end_src
+   [[./README.assets/09.png]]
 
-#+begin_src c
-for(i = 0; i < n; i++ )
-{
-  for(j = 1; j < n; j =* 2 )
-  {
-    stmt;
-  }
-}
-#+end_src
+10. for anidado i++, j=*2
+    #+begin_src c
+    for(i = 0; i < n; i++ )
+    {
+      for(j = 1; j < n; j =* 2 )
+      {
+        stmt;
+      }
+    }
+    #+end_src
+   [[./README.assets/10.png]]
+
 ** Análisis =if= y =while=
