@@ -157,3 +157,67 @@ Se analizarán por el método de frecuencia de conteo
    [[./README.assets/10.png]]
 
 ** Análisis =if= y =while=
+
+[[./README.assets/if-while.png]]
+
+1. =while= vs =for=
+   #+begin_src c
+   i = 0;
+   while ( i < n )
+   {
+     stmt;
+     i++;
+   }
+   #+end_src
+
+   #+begin_src c
+   for ( i = 0; i < n; i++ )
+   {
+     stmt;
+   }
+   #+end_src
+   [[./README.assets/w01.png]]
+
+2. a = a*2
+   #+begin_src c
+   a = 1;
+   while ( a < b )
+   {
+     stmt;
+     a = a*2;
+   }
+   #+end_src
+   [[./README.assets/w02.png]]
+
+   En sentencia =for=
+   #+begin_src c
+   for ( a = 1; a < b; a = a*2 )
+   {
+     stmt;
+   }
+   #+end_src
+
+3. k = k + 1
+   #+begin_src c
+   i = 1;
+   k = 1;
+   while ( k < n )
+   {
+     stmt;
+     k = k + 1;
+     i++;
+   }
+   #+end_src
+   [[./README.assets/w03.png]]
+
+4. =while= & =if=
+   #+begin_src c
+   while ( m != n )
+   {
+     if ( m >n )
+       m = m - n;
+     else
+       n = n - m;
+   }
+   #+end_src
+   [[./README.assets/w04.png]]
