@@ -1,0 +1,14 @@
+#+TITLE: Smallest positive number
+
+You are given an unsorted array with both positive and negative elements. You have to find the smallest positive number missing from the array. You can modify the original array.
+
+#+begin_src shell
+ Input:  {2, 3, 7, 6, 8, -1, -10, 15}
+ Output: 1
+
+ Input:  { 2, 3, -7, 6, 8, 1, -10, 15 }
+ Output: 4
+
+ Input: {1, 1, 0, -1, -2}
+ Output: 2
+#+end_src
