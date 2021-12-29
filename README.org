@@ -221,3 +221,24 @@ Se analizarán por el método de frecuencia de conteo
    }
    #+end_src
    [[./README.assets/w04.png]]
+
+** Max time, min time y average time
+
+#+begin_src c
+Algorithm Test(n)
+{
+  if ( n < 5 )
+  {
+    printf("%d",n);
+  }
+  else
+  {
+    for ( i = 0; i < n; i++ )
+    {
+      printf("%d",i);
+    }
+  }
+
+}
+
+#+end_src
